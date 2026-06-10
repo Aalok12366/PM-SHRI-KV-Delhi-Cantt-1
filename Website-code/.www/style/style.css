@@ -158,7 +158,7 @@ nav button:hover {
 .btn-menu {
     background-color: transparent;
     color: black;
-    border-radius: 5rem;
+    border-radius: 5vw;
     border: none;
     font-size: 0.1vw;
     font-weight: 500;
@@ -246,10 +246,11 @@ main {
 
 
 .card {
+    inset: 0.2vw 0.2vw 0.2vw 0.2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 28vw;
+    height: 60vh;
     width: 15vw;
     border-radius: 0.7vw;
     background-color: rgba(255, 255, 255, 0.158);
@@ -257,9 +258,16 @@ main {
     overflow: hidden;
 }
 
+.card-description-container {
+    display: flex;
+    margin-top: 1.65vw;
+    min-width: 100%;
+    height: 45vh;
+    background-color: transparent;
+    overflow: hidden;
+}
+
 p.card-description {
-    position: relative;
-    top: 1.5vw;
     font-size: 0.92vw;
     letter-spacing: 0.01vw;
     min-width: 100%;
@@ -268,14 +276,12 @@ p.card-description {
     opacity: 50%;
 }
 
-.buttons {
-    position: relative;
-    bottom: -2.4vw;
-}
+
 
 
 
 .btn-read-more {
+    margin: 0;
     background-color: #ffffff;
     color: #0f0f0f;
     text-decoration: none;
